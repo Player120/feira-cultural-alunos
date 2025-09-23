@@ -1,0 +1,72 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1742984543961
+  modified: 1742984543961
+collection:
+  - url: http://localhost:3000/students
+    name: Cadastro de estudantes
+    meta:
+      id: req_bf87c7ab14554370955e703b8e4a3026
+      created: 1742985832975
+      modified: 1742989066154
+      isPrivate: false
+      sortKey: -1742985832976
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"rm": 123,
+        	"nome": "Ronaldinho Gaúcho",
+        	"curso": "MTEC Informática para Web",
+        	"serie": "3",
+        	"email": "r10@gmail.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/students
+    name: Lista de estudantes
+    meta:
+      id: req_8b81b76f6e8044edaed948f38cb9e267
+      created: 1742988089420
+      modified: 1742988129418
+      isPrivate: false
+      sortKey: -1742988089420
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742984569986
+    modified: 1742984569986
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742984569872
+    modified: 1742984569872
+    isPrivate: false
